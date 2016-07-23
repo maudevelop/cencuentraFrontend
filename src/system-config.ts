@@ -34,7 +34,11 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+<<<<<<< HEAD
   'app/signup',
+=======
+  'app/login',
+>>>>>>> feature/login
   /** @cli-barrel */
 ];
 
