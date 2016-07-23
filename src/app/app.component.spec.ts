@@ -15,8 +15,4 @@ describe('App: CencuentraFrontend', () => {
       inject([AppComponent], (app: AppComponent) => {
     expect(app).toBeTruthy();
   }));
-<<<<<<< HEAD
-
-=======
->>>>>>> feature/login
 });
