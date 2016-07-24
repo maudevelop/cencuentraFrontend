@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { LogsignComponent } from './logsign/logsign.component';
 import { NegociosComponent } from './negocios/negocios.component';
 import { PromocionesComponent } from './promociones/promociones.component';
+import { EditarnegocioComponent } from './editarnegocio/editarnegocio.component';
 import { AdminComponent } from './admin/admin.component';
 
 const routes: RouterConfig = [
@@ -31,6 +32,10 @@ const routes: RouterConfig = [
     {
         path: 'promociones',
         component: PromocionesComponent
+    },
+    {
+        path: 'editarnegocio',
+        component: EditarnegocioComponent
     }
 ];
 

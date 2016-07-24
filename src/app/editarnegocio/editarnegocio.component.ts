@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   moduleId: module.id,
@@ -8,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarnegocioComponent implements OnInit {
 
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit() {
+  }
+
+  cancelarCambios(){
+    this.router.navigate(['/negocios']).then();
   }
 
 }

@@ -6,7 +6,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   selector: 'app-admin',
   templateUrl: 'admin.component.html',
   directives: [ROUTER_DIRECTIVES],
-  styleUrls: []
+  styleUrls: ['admin.component.css']
 })
 export class AdminComponent implements OnInit {
 

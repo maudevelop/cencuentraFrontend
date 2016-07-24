@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { ROUTER_DIRECTIVES, Router } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -10,9 +10,14 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class NegociosComponent implements OnInit {
 
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit() {
+  }
+
+  modificarNegocio(negocio){
+    this.router.navigate(["/editarnegocio"]).then();
+    return false;
   }
 
 }

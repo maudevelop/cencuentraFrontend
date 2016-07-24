@@ -10,7 +10,6 @@ import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
   directives: [ROUTER_DIRECTIVES]
 })
 export class LoginComponent implements OnInit {
-  logsign = true;
   constructor(public router: Router) {
     
   }

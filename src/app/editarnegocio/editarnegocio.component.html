@@ -1,3 +1,37 @@
-<p>
-  editarnegocio works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col m12 s12">
+            <h2 class="center-align">Editar Negocio</h2>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col m12 s12">
+                            <i class="mdi-content-mail prefix"></i>
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">Nombre de Negocio</label>
+                        </div>
+                        <div class="input-field col m12 s12">
+                            <i class="mdi-content-mail prefix"></i>
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Descripcion de negocio</label>
+                        </div>
+                        <div class="input-field col m12 s12">
+                            <i class="mdi-maps-store-mall-directory prefix"></i>
+                            <input id="company" type="text" class="validate">
+                            <label for="company">Tipo de negocio</label>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col m6 s6">
+                         <p class="center"><button (click)="cancelarCambios()" class="btn btn-medium waves-effect waves-light" type="button" name="action">Cancelar cambios</button></p>
+                        </div>
+                        <div class="col m6 s6">
+                         <p class="center"><button class="btn btn-medium waves-effect waves-light" type="button" name="action">Guardar cambios</button></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
