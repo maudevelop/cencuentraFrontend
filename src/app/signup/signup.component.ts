@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Router, ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -11,8 +11,8 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class SignupComponent implements OnInit {
 
- logsign= true;
-  constructor() {}
+
+  constructor(public router: Router) {}
 
   ngOnInit() {
     
@@ -21,6 +21,6 @@ export class SignupComponent implements OnInit {
   signUp(user: HTMLInputElement, email: HTMLInputElement, password:HTMLInputElement) {
 
     console.log("Signing up with: \n " + user.value + "\n" + email.value + "\n" + password.value);
-    
+    this.router.navigate(['/admin']).then();
   }
 }

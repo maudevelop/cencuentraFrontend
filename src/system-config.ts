@@ -37,6 +37,10 @@ const barrels: string[] = [
   'app/signup',
   'app/login',
   'app/logsign',
+  'app/admin',
+  'app/negocios',
+  'app/promociones',
+  'app/editarnegocio',
   /** @cli-barrel */
 ];
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
+
 
 @Component({
   moduleId: module.id,
@@ -10,13 +11,16 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   logsign = true;
-  constructor() {}
+  constructor(public router: Router) {
+    
+  }
 
   ngOnInit() {
   }
 
   logIn (email: HTMLInputElement, password: HTMLInputElement) {
     console.log("Logging in: " + email.value + " and password " + password.value);
+    this.router.navigate(['/admin']).then();
   }
 
 }
